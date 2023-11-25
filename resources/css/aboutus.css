@@ -114,3 +114,8 @@ a{
     border: none;
     cursor: pointer;
 }
+
+div p span a
+{
+    color: #911439;
+}
