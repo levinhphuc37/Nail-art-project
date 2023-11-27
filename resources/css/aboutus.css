@@ -1,7 +1,7 @@
 .wrapper {
     padding: 20px;
     text-align: center;
-    background-image: url(../images/bg-inner.png);
+    background-image: url(../images/nail_art/about_us/about-us-banner.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -118,4 +118,5 @@ a{
 div p span a
 {
     color: #911439;
+    text-decoration: none;
 }
