@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="css/appointment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">   
+</head>
+<header>
+    <section>
+        <div class="my-flex-container">
+            <div>Add: 8 Ton That Thuyet, Hanoi, Vietnam</div>
+            <span>Mon-Sat: 9am to 6pm</span>
+        </div>
+        <div class="my-topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <div class="my-dropdown">
+                <button class="my-dropbtn">Page
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="my-dropdown-content">
+                    <a href="aboutus.html">About Us</a>
+                    <a href="history.html">History of Nail-art</a>
+                    <a href="nailcare.html">Nail-care</a>
+                </div>
+            </div>
+            
+    
+            <div class="my-dropdown">
+                <button class="my-dropbtn">Services
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="my-dropdown-content">
+                    <a href="children.html">Childen Nail-art Service</a>
+                    <a href="adult.html">Adult Nail-art Service</a>
+                    <a href="product.html">Product and Accessories Shop</a>
+                </div>
+            </div>
+      
+            <div class="my-dropdown">
+                <a href="nailcare.html">Nailcare Tips</a>
+            </div>
+            <div class="my-dropdown">
+                <a href="history.html">History</a>
+            </div>
+            <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            <div class="my-search-container">
+                <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i>Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</header>
+<body>
+    <!-- banner -->
+    <div class="wrapper">
+        <h1 style="color: #911429;">APPOINTMENT</h1>        
+    </div>
+    <!-- form -->
+    <div class="contact-form" style="margin-top: 50px;">
+        <div class="sidebar-head" style="align-items: center; display: flex;">
+            <h6><b>Book An Appointment</b></h6>
+        </div>
+        <div class="form-head">
+            <form> 
+                <div style="display: flex;">                      
+                    <div class="contact-input">
+                        <input type="text" placeholder="Name" style="width: 400px;"required="">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="contact-input" style="margin-left:20px ;" >
+                        <input type="email" class="form-control"  style="width: 400px;" id="contactemail" placeholder="Email"
+                            required="">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+                <div style="display: flex;" >
+                    <div class="contact-input">
+                        <input type="tel" class="form-control" style="width: 400px;" placeholder="Phone">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-input" style="margin-left:20px ;">
+                        <input class="form-control" id="date" name="date" style="width: 400px;" placeholder="MM/DD/YYYY"
+                            type="text" />
+                        <span class="form-date"><i class="fas fa-calendar-minus"></i></span>
+                    </div>
+                </div>
+                    <div class="contact-input">
+                        <textarea placeholder="Your Text" style="width: 820px;" required=""></textarea>
+                    </div>
+                    
+                    <div class="contact-check">
+                        <input type="checkbox" class="form-check-input" id="check" required="">
+                        <label class="form-check-label" for="check" required="">I agree that my submitted data
+                            is being collected and stored.</label>
+                    </div>
+                   
+                    <input type="hidden" name="form_type" value="contact" />
+                    <div style="margin-top: 25px;">
+                        <button type="submit"style="background-color: #911439;height: 40px; width: 170px; border: none;">
+                            <span style="color: white;">Submit</span>
+                        </button>
+                    </div>
+            </form>
+            <br><br>
+        </div>
+    </div>
+    <!-- news section -->
+    <div class="blog-wraper-five" style="margin-top: 50px;">
+        <h2>Newsletter</h2>
+        <h3>LATEST NAIL TRENDS AND DESIGNS FOR YOU</h3>
+        <form class="subscribe-form">
+            <input type="email" placeholder="Enter Your Email">
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </div>  
+</body>
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3" style="margin-top: 10px;">
+                <p class="company-name">Nail Art Salon</p> 
+                <p>Indulge in the artistry of self-expression at CherryBlossomNail, where your nails become a canvas for creativity.</p>																														  							
+            </div>
+                        
+            <div class="col-3" style="margin-top: 10px;">
+                <h4>USEFUL LINKS</h4>
+                <div class="useful-link">
+                    <ul class="links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#"> Booking</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+          
+            <div class="col-3" style="margin-top: 10px;">
+                <h4> INSTAGRAM POST</h4>
+                <div class="instagram">
+                    <img src="images/insta-blog1.jpg" alt="insta-blog1.jpg"> 
+                    <img src="images/insta-blog2.jpg" alt="insta-blog2.jpg"> 
+                    <img src="images/insta-blog3.jpg" alt="insta-blog3.jpg"> 
+                    <img src="images/insta-blog4.jpg" alt="insta-blog4.jpg"> 
+                    <img src="images/insta-blog5.webp" alt="insta-blog5">
+                    <img src="images/insta-blog6.webp" alt="insta-blog6"> 
+                </div>
+            </div>
+            <div class="col-3" style="margin-top: 10px;">
+                <div class="contact-info">
+                    <h4>CONTACT INFO</h4>
+                    <p class="address">ADDRESS:<br> 121 Waldeck Street, NY, USA</p> 
+                    <p class="phone">PHONE:<br> 0800-123456, 0800-123489</p> 
+                    <p class="email">EMAIL:<br> nailartsalon@gmail.com</p> 
+                </div>
+            </div>
+        </div>
+        <div class="row bottom-footer">
+          <div class="col-12">
+            <p class="copy-right">© 2023 Nail Art Salon. All rights reserved.</p>
+          </div>
+        </div>
+    </div>
+</footer>
+</html>
