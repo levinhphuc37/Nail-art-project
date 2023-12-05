@@ -2,10 +2,11 @@
   display: flex;
   background-color: #EFCEC9;  
 }
-.my-qwe{
+header{
   position: fixed;
   width: 100%;
   z-index: 2;
+  top: 0;
 }
 .my-flex-container > div {
   margin: 10px;
