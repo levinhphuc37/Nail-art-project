@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="js/test.js">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">   
+    <script>
+        function codeAddress() {            
+            document.getElementById('name').value = localStorage.getItem('name');
+        }
+        window.onload = codeAddress;
+    </script>
 </head>
 <header>
     <section>
@@ -77,7 +83,7 @@
             <form> 
                 <div style="display: flex;">                      
                     <div class="contact-input">
-                        <input type="text" placeholder="Name" style="width: 400px;"required="">
+                        <input type="text" placeholder="Name" style="width: 400px;" required="">
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="contact-input" style="margin-left:20px ;" >
@@ -97,6 +103,19 @@
                         <span class="form-date"><i class="fas fa-calendar-minus"></i></span>
                     </div>
                 </div>
+                <div class="contact-input">
+                    <select class="form-control" style="width: 820px;"id="name" >
+                    
+                    <option>Jordan Mikes</option>
+                    <option>Kelley Miles</option>
+                    <option>Smith Dan</option>
+                    <option>Carolyn Olson</option>
+                     </select>
+                    <i class="fas fa-user" style="margin-right: 20px;"></i>
+                </div>
+
+                
+                
                     <div class="contact-input">
                         <textarea placeholder="Your Text" style="width: 820px;" required=""></textarea>
                     </div>
