@@ -7,11 +7,30 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/test.js">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
+    <script>        
+        function test1(){
+            localStorage.setItem('name', document.getElementById("product1").getAttribute("value"));     
+        }
+        function test2(){
+            localStorage.setItem('name', document.getElementById("product2").getAttribute("value"));     
+        }
+        function test3(){
+            localStorage.setItem('name', document.getElementById("product3").getAttribute("value"));     
+        }
+        function test4(){
+            localStorage.setItem('name', document.getElementById("product4").getAttribute("value"));     
+        }
+    </script>
 </head>
 <header>
-    <section>
+    <section class="my-qwe" style="top:0;">
         <div class="my-flex-container">
             <div>Add: 8 Ton That Thuyet, Hanoi, Vietnam</div>
             <span>Mon-Sat: 9am to 6pm</span>
@@ -55,7 +74,7 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
                 <div>
-                    <a href="appointment.html" style="background-color: #911439; color: #111;">Get a Appointment</a>
+                    <a href="appointment.html" style="background-color: #911439; color: white;">Get a Appointment</a>
                 </div>
             </div>
             <a href="feedback.html">Feedback</a>
@@ -64,20 +83,67 @@
 </header>
 <body>
     <!-- index banner -->
-    <section>
-        <div class="banner-wrapper">        
-            <img src="images/nail_art/index_page/bg-slider-2.jpg" alt="img">
+    
+        <div id="demo" class="carousel slide" data-ride="carousel" style="z-index: 1;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">                
+                <img src="images/nail_art/index_page/bg-slider-2.jpg" alt="img">
             <div class="carousel-caption ">
                 <div class="banner-head">
-                    <h1> Choose The <span>Best Attitude</span> And Services</h1>
+                    <h1> CHOOSE THE <span>BEST ATTITUDE</span> AND SERVICES</h1>
                     <p >Change Your Nails Look With Our Talented Stylists.</p>
                     <a href="appointment.html" class="banner-btn"> 
                         <div><span>Get An Appointment</span> </div>
                     </a>
                 </div>
-            </div>                              
-        </div>
-    </section> 
+            </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="images/nail_art/index_page/bg-slider-2.jpg" alt="img">
+            <div class="carousel-caption ">
+                <div class="banner-head">
+                    <h1> SHINE THAT <span>BRIGHTENS</span></h1><h1> YOUR LIFE</h1>
+                    <p >Change Your Nails Look With Our Talented Stylists.</p>
+                    <a href="appointment.html" class="banner-btn"> 
+                        <div><span>Get An Appointment</span> </div>
+                    </a>
+                </div>
+            </div> 
+              </div>
+              <div class="carousel-item">
+                <img src="images/nail_art/index_page/bg-slider-2.jpg" alt="img">
+            <div class="carousel-caption ">
+                <div class="banner-head">
+                    <h1> GET YOUR NAILS <span>DONE BY A</span> SKILLED NAIL ARTIST</h1>
+                    <p >Change Your Nails Look With Our Talented Stylists.</p>
+                    <a href="appointment.html" class="banner-btn"> 
+                        <div><span>Get An Appointment</span></div>
+                    </a>
+                </div>
+            </div> 
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+       
+
+    
     <!-- index readmore -->
     <section>
         <div class="readmore">
@@ -105,24 +171,24 @@
             <div class="service">
                 <img src="images/nail_art/index_page/service-two.jpg" alt="Service 2">
                 <a href="children.html">
-                    <div class="service-button">
-                        <button>Childen Nail-Art</button>
+                    <div style="height: 50px;display: flex; align-items: center;justify-content: center;background-color: #efcec9;">
+                        <span>Childen Nail-Art</span>
                     </div>
                 </a>
             </div>
             <div class="service">
                 <img src="images/nail_art/index_page/service-three.jpg" alt="Service 3">
                 <a href="adult.html">
-                    <div class="service-button">
-                        <button>Adult Nail-Art</button>
+                    <div style="height: 50px;display: flex; align-items: center;justify-content: center;background-color: #efcec9;">
+                        <span>Adult Nail-Art</span>
                     </div>
                 </a>
             </div>
             <div class="service">
                 <img src="images/nail_art/index_page/service-four.jpg" alt="Service 4">
                 <a href="product.html">
-                    <div class="service-button">
-                        <button>Product and Accessories</button>
+                    <div style="height: 50px;display: flex; align-items: center;justify-content: center;background-color: #efcec9;">
+                        <span>Product and Accessories</span>
                     </div>
                 </a>
             </div>
@@ -151,32 +217,41 @@
         </div>
         <div class="team">
             <div class="team-member">
-                <img src="images/team-1.png" alt="Jordan Mike">
-                <a href="appointment.html">
+                <div style="background-color: #efcec9;">
+                <img src="images/nail_art/about_us/Mikes.jpg" alt="Jordan Mike">
+                <a href="appointment.html" onclick="test1();" value="Jordan Mikes" id="product1">
                     <div><span>Jordan Mikes</span></div>
+
                 </a>
-                <span>Manager</span>
+                <span style="color: #911429;">Manager</span>
+                </div>
             </div>
             <div class="team-member">
-                <img src="images/team-2.png" alt="Kelley Miles">
-                <a href="appointment.html">
+                <div style="background-color: #efcec9;">
+                <img src="images/nail_art/about_us/Kelle.jpg" alt="Kelley Miles">
+                <a href="appointment.html" onclick="test2();" value="Kelley Miles" id="product2">
                     <div><span>Kelley Miles</span></div>
                 </a>
-                <span>Director</span>
+                <span style="color: #911429;">Director</span>
+                </div>
             </div>
             <div class="team-member">
-                <img src="images/team-3.png" alt="Smith Dan">
-                <a href="appointment.html">
+                <div style="background-color: #efcec9;">
+                <img src="images/nail_art/about_us/Dan.jpg" alt="Smith Dan">
+                <a href="appointment.html" onclick="test3();" value="Smith Dan" id="product3">
                     <div><span>Smith Dan</span></div>
                 </a>
-                <span>Stylist</span>
+                <span style="color: #911429;">Stylist</span>
+                </div>
             </div>
             <div class="team-member">
-                <img src="images/team-4.png" alt="Carolyn Olson">
-                <a href="appointment.html">
+                <div style="background-color: #efcec9;">
+                <img src="images/nail_art/about_us/Carolyn.jpg" alt="Carolyn Olson">
+                <a href="appointment.html" onclick="test4();" value="Carolyn Olson" id="product4">
                         <div><span>Carolyn Olson</span></div>
                     </a>
-                    <span>Stylist</span>
+                    <span style="color: #911429;">Stylist</span>
+                </div>
             </div>
         </div>
     </section>
@@ -220,30 +295,55 @@
     <!-- testimonial section -->
     <section>
         <div class="testimonial">
-                <h2>Testimonial</h2>
-                <h3>What our client's say</h3>
-            <div class="testimonials">
-                <div class="testimonial-item">
-                    <p> We provide exquisite service with some of the most talented and
-                        experienced artists in the industry.
-                        My team and I compliment the face using stunning hairdressing
-                        techniques, from up-do's to fishtails.
-                        Whether you're attending a red carpet event or hosting a TV show, my
-                        makeup services will ensure you look flawless.</p>
-                    <img src="images/nail_art/index_page/testimonial-1.webp" alt="Testimonial 1">
-                    <h4>Pamela Adams</h4>
+            <h2>Testimonial</h2>
+            <h3>What our client's say</h3>
+            <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                 <ul class="carousel-indicators">
+                    <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo1" data-slide-to="1"></li>
+                    
+                </ul>                    
+                <!-- The slideshow -->
+                <div class="carousel-inner" style="margin: auto;width:600px;" >
+                    <div class="carousel-item active">
+                        <div class="testimonials" style="display:flex;justify-content: center;">                              
+                        <div class="testimonial-item"style="background-color: black;">
+                            <p> We provide exquisite service with some of the most talented and
+                                experienced artists in the industry.
+                                My team and I compliment the face using stunning hairdressing
+                                techniques, from up-do's to fishtails.
+                                Whether you're attending a red carpet event or hosting a TV show, my
+                                makeup services will ensure you look flawless.</p>
+                            <img src="images/nail_art/index_page/testimonial-1.webp" alt="Testimonial1">
+                            <h4>Pamela Adams</h4>
+                        </div>
+                        </div>  
+                    </div> 
+                    <div class="carousel-item">        
+                        <div style="display: flex; justify-content: center;">                
+                        <div class="testimonial-item" style="background-color: black;">
+                            <p>Treat yourself to one of our signature services.
+                                Our beauty experts will make you look more beautiful and feel better
+                                than ever before.
+                                The royal treatment for the hands of a queen.
+                                Join our membership for extra benefit. Get discount monthly.
+                                Charming, bubbly, relaxing atmosphere
+                                Extraordinary nail art designs</p>
+                            <img src="images/nail_art/index_page/testimonial-2.webp" alt="Testimonial2">
+                            <h4>Kelley Miles</h4>
+                        </div>
+                        </div>
+                    </div> 
                 </div>
-                <div class="testimonial-item">
-                    <p>Treat yourself to one of our signature services.
-                        Our beauty experts will make you look more beautiful and feel better
-                        than ever before.
-                        The royal treatment for the hands of a queen.
-                        Join our membership for extra benefit. Get discount monthly.
-                        Charming, bubbly, relaxing atmosphere
-                        Extraordinary nail art designs</p>
-                    <img src="images/nail_art/index_page/testimonial-2.webp" alt="Testimonial 2">
-                    <h4>Kelley Miles</h4>
-                </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
             </div>
         </div>
     </section>
